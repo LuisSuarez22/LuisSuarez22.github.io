@@ -36,7 +36,7 @@
                 <button>Read more</button>
             </div>
         </div>
-        <div class="now animate_animated animate_fadeInLeft container-cards">
+        <div class="now animate__animated animate__fadeInLeft container-cards">
             <div class="card image-1">
                 <div class="name">
                     <h1>Photography</h1>
@@ -53,9 +53,9 @@
                 </div>
             </div>
         </div>
-        <div class="now animate_animated animate_bounceInLeft history">
+        <div class="now animate__animated animate__bounceInLeft history">
             <div class="img">
-                <img src="https://cdn.pixabay.com/photo/2021/01/13/13/46/house-5914171_649.jpg" alt="">
+                <img src="https://cdn.pixabay.com/photo/2021/01/13/13/46/house-5914171_649.jpg" alt="Winter house">
             </div>
             <div class="title-history">
                 <h1>A Winter's Morning</h1>
@@ -82,8 +82,8 @@
             </div>
         </div>
         <div class="card-history">
-            <div class="wow animate_animated animate_backInLeft card-history-1">
-                <img src="https://cdn.pixabay.com/photo/2019/06/10/09/00/village-4263755_640.jpg" alt="">
+            <div class="wow animate__animated animate__backInLeft card-history-1">
+                <img src="https://cdn.pixabay.com/photo/2019/06/10/09/00/village-4263755_640.jpg" alt="Village landscape">
                 <div class="prestation-history">
                     <div class="title-history-p">
                         <h1>Moodland Adventures</h1>
@@ -101,8 +101,9 @@
                     </div>
                 </div>
             </div>
-            <div class="wow animate_animated animate_backInLeft card-history-2">
-                <img src="" alt="">
+            <div class="wow animate__animated animate__backInLeft card-history-2">
+                <!-- Agregué una imagen para la segunda tarjeta (puedes cambiarla) -->
+                <img src="https://cdn.pixabay.com/photo/2016/11/22/19/25/sea-turtles-1850113_640.jpg" alt="Turtles in the sea">
                 <div class="prestation-history">
                     <div class="title-history-p">
                         <h1>Exploring with turtles</h1>
@@ -120,8 +121,9 @@
                     </div>
                 </div>
             </div>
-            <div class="wow minatic_animated_minate_backInLeft card-history-1">
-                <img src="https://cdn.pixabay.com/photo/2017/03/27/16/50/beach-2179624_640.jpg" alt="">
+            <!-- CORRECCIÓN: Cambié minatic_animated_minate_backInLeft por wow animate__animated animate__backInLeft -->
+            <div class="wow animate__animated animate__backInLeft card-history-1">
+                <img src="https://cdn.pixabay.com/photo/2017/03/27/16/50/beach-2179624_640.jpg" alt="Sunset beach">
                 <div class="prestation-history">
                     <div class="title-history-p">
                         <h1>Sunset at the beach</h1>
@@ -131,7 +133,7 @@
                     </div>
                     <div class="text-history-p">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam velit accusamus eveniet
-                            quidem iraque, soluta nude tenetur, voluptatem consequatur recusandae maxime odit
+                            quidem itaque, soluta unde tenetur, voluptatem consequatur recusandae maxime odit
                             exercitationem ad illum repellat quos aliquid voluptatibus molestiae?</p>
                     </div>
                     <div class="button-history">
@@ -141,11 +143,17 @@
             </div>
         </div>
     </article>
-    <!-- MOM.js Utilizable com animate.css para que las animaciones aparezcan junto al scroll -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/kew/i.1.2/wow.min.js"></script>
-    <!-- Typed.js Libreria de escritura-->
+    <!-- WOW.js para animaciones al hacer scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        // Inicializar WOW.js
+        new WOW().init();
+    </script>
+    
+    <!-- Typed.js Librería de escritura -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <!--Viculamos el archivo de javascript-->
+
+    <!-- Vinculamos el archivo de javascript -->
     <script src="script.js"></script>
 </body>
 </html>
