@@ -15,13 +15,15 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
+/* ELIMINA ESTA PRIMERA DEFINICIÓN (líneas 15-20) O CÁMBIALA: */
 .container-general {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    padding: 30px;
-    margin: 20px auto;
+    /* Para hacerlo transparente: */
+    background-color: transparent;  /* Cambia esto */
+    border-radius: 0;               /* Opcional: elimina bordes redondeados */
+    padding: 20px 0;                /* Ajusta padding si quieres */
+    margin: 0 auto;
     max-width: 1200px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: none;               /* Elimina sombra */
 }
 
 header {
@@ -127,12 +129,18 @@ header {
     transform: scale(0.95);
 }
 
+/* SEGUNDA DEFINICIÓN - MANTÉN ESTA O ELIMÍNALA (líneas 85-89) */
 .container-general {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* Si quieres transparente, agrega: */
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 20px 0;
 }
 
 .container-cards {
