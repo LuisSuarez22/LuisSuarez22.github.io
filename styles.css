@@ -6,6 +6,22 @@
 
 body {
     padding: 0 20px;
+    background-image: url('fondoMAr.jpg');  /* ¡TU IMAGEN DE FONDO! */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.container-general {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 header {
@@ -14,12 +30,17 @@ header {
     width: 100%;
     height: 80px;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 0 20px;
+    margin-bottom: 20px;
 }
 
 .title {
     width: 40%;
     text-align: center;
     font-size: 50px;
+    color: #333;
 }
 
 .nav-bar {
@@ -40,6 +61,11 @@ header {
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-size: 30px;
+    transition: color 0.3s;
+}
+
+.nav-bar ul li a:hover {
+    color: #ff6b6b;
 }
 
 .image {
@@ -54,12 +80,15 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
+    margin: 20px 0;
 }
 
 #title {
     width: auto;
     height: 80px;
     color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .description {
@@ -69,6 +98,7 @@ header {
     font-size: 30px;
     line-height: 50px;
     color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .button {
@@ -85,14 +115,16 @@ header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
 .button button:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    background-color: #333;
 }
 
 .button button:active {
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 .container-general {
@@ -112,20 +144,29 @@ header {
 }
 
 .card {
-    border-radius: 10px;
+    border-radius: 15px;
     width: 25%;
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
 .name {
     font-size: 30px;
-    background-color: rgba(0, 0, 0, 0.34);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 15px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .image-1 {
@@ -153,8 +194,13 @@ header {
 }
 
 .history {
-    width: 50%;
+    width: 100%;
     height: auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .img img {
@@ -162,26 +208,34 @@ header {
     height: 600px;
     object-fit: cover;
     border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .title-history h1 {
     font-size: 40px;
-    margin: 10px 0;
+    margin: 20px 0;
+    color: #333;
+    line-height: 1.4;
 }
 
 .date h3 {
     font-size: 20px;
     margin: 10px 0;
+    color: #666;
 }
 
 .history-text {
     font-size: 20px;
     text-align: justify;
+    line-height: 1.6;
+    color: #444;
+    margin: 20px 0;
 }
 
 .button-2 {
-    margin: 20px 0;
+    margin: 30px 0 20px 0;
     width: 100%;
+    text-align: center;
 }
 
 .button-2 button {
@@ -189,15 +243,26 @@ header {
     height: 60px;
     border-radius: 5px;
     border: none;
-    background-color: black;
+    background-color: #333;
     color: white;
     cursor: pointer;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.3s;
+}
+
+.button-2 button:hover {
+    background-color: #555;
+    transform: scale(1.05);
 }
 
 .card-history {
-    width: 50%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .card-history-1 {
@@ -205,36 +270,46 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    margin-bottom: 30px;
 }
 
 .card-history img {
-    border-radius: 20px;
-    width: 49%;
+    border-radius: 15px;
+    width: 45%;
     height: 290px;
     object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .prestation-history {
-    width: 49%;
+    width: 50%;
 }
 
 .title-history-p {
-    margin: 5px 0;
-    font-size: 25px;
+    margin: 10px 0;
+    font-size: 28px;
+    color: #333;
 }
 
 .date-history-p {
-    margin: 5px 0;
-    font-size: 20px;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #666;
 }
 
 .text-history-p {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+    margin: 15px 0;
 }
 
 .button-history {
-    margin: 15px 0;
+    margin: 20px 0 10px 0;
     width: 100%;
 }
 
@@ -243,11 +318,17 @@ header {
     height: 60px;
     border-radius: 5px;
     border: none;
-    background-color: black;
+    background-color: #333;
     color: white;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.3s;
+}
+
+.button-history button:hover {
+    background-color: #555;
+    transform: scale(1.05);
 }
 
 /* ============ MEDIA QUERIES ============ */
@@ -264,7 +345,8 @@ header {
     }
     
     .history, .card-history {
-        width: 70%;
+        width: 90%;
+        padding: 20px;
     }
     
     .image {
@@ -273,10 +355,19 @@ header {
     
     .description {
         width: 60%;
+        font-size: 26px;
     }
     
     .button {
         width: 20%;
+    }
+    
+    .title {
+        font-size: 40px;
+    }
+    
+    .nav-bar ul li a {
+        font-size: 24px;
     }
 }
 
@@ -285,22 +376,28 @@ header {
     header {
         flex-direction: column;
         height: auto;
-        padding: 20px 0;
+        padding: 20px;
     }
     
     .title, .nav-bar {
         width: 100%;
+        text-align: center;
+    }
+    
+    .title {
+        font-size: 35px;
+        margin-bottom: 15px;
     }
     
     .nav-bar ul {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
-        margin-top: 20px;
+        gap: 15px;
+        margin-top: 10px;
     }
     
     .nav-bar ul li a {
-        font-size: 24px;
+        font-size: 20px;
     }
     
     .container-cards {
@@ -309,11 +406,13 @@ header {
     }
     
     .card {
-        width: 80%;
+        width: 90%;
+        height: 350px;
     }
     
     .history, .card-history {
-        width: 90%;
+        width: 100%;
+        padding: 15px;
     }
     
     .image {
@@ -321,14 +420,16 @@ header {
     }
     
     #title {
-        font-size: 40px;
+        font-size: 35px;
         text-align: center;
+        height: 60px;
     }
     
     .description {
         width: 80%;
-        font-size: 24px;
-        line-height: 40px;
+        font-size: 22px;
+        line-height: 35px;
+        margin: 30px 0;
     }
     
     .button {
@@ -337,6 +438,8 @@ header {
     
     .card-history-1 {
         flex-direction: column;
+        gap: 20px;
+        padding: 15px;
     }
     
     .card-history img, .prestation-history {
@@ -345,6 +448,14 @@ header {
     
     .card-history img {
         height: 250px;
+    }
+    
+    .img img {
+        height: 400px;
+    }
+    
+    .title-history h1 {
+        font-size: 32px;
     }
 }
 
@@ -355,15 +466,15 @@ header {
     }
     
     .title h1 {
-        font-size: 40px;
+        font-size: 28px;
     }
     
     .nav-bar ul {
-        gap: 15px;
+        gap: 10px;
     }
     
     .nav-bar ul li a {
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .image {
@@ -371,14 +482,14 @@ header {
     }
     
     #title {
-        font-size: 32px;
-        height: 60px;
+        font-size: 28px;
+        height: 50px;
     }
     
     .description {
         width: 90%;
-        font-size: 20px;
-        line-height: 32px;
+        font-size: 18px;
+        line-height: 30px;
         margin: 20px 0;
     }
     
@@ -388,37 +499,41 @@ header {
     
     .button button, .button-2 button, .button-history button {
         height: 50px;
-        font-size: 18px;
+        font-size: 16px;
     }
     
     .title-history h1 {
-        font-size: 32px;
+        font-size: 26px;
     }
     
     .history-text, .text-history-p {
-        font-size: 18px;
+        font-size: 16px;
     }
     
     .img img {
-        height: 400px;
+        height: 300px;
     }
     
     .card {
-        width: 90%;
+        width: 95%;
         height: 300px;
     }
     
     .name {
-        font-size: 24px;
+        font-size: 22px;
         padding: 10px 15px;
     }
     
     .title-history-p {
-        font-size: 22px;
+        font-size: 20px;
     }
     
     .date-history-p {
-        font-size: 18px;
+        font-size: 16px;
+    }
+    
+    .button-2 button, .button-history button {
+        width: 200px;
     }
 }
 
@@ -429,7 +544,9 @@ header {
     }
     
     .button-2 button, .button-history button {
-        width: 200px;
+        width: 180px;
+        height: 45px;
+        font-size: 16px;
     }
     
     .image {
@@ -437,15 +554,23 @@ header {
     }
     
     #title {
-        font-size: 28px;
+        font-size: 24px;
     }
     
     .description {
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 16px;
+        line-height: 26px;
     }
     
     .card {
         height: 250px;
+    }
+    
+    .title {
+        font-size: 30px;
+    }
+    
+    .nav-bar ul li a {
+        font-size: 16px;
     }
 }
