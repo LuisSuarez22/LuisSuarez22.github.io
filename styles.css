@@ -43,7 +43,7 @@ header {
 }
 
 .image {
-    background-image: url(assets/fondo.jpg);
+    background-image: url('ARAWHITE.jpeg');
     width: 100%;
     height: 900px;
     background-position: center;
