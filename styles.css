@@ -145,7 +145,7 @@ header {
 }
 
 .image-1 {
-    /*IMAGEN DE TREN*/
+    /*IMAGEN DE UNIVERSO*/
     background-image: url(https://es.gizmodo.com/app/uploads/2025/04/Diseno-sin-titulo-55-15-1024x683.jpg);
     background-position: center;
     background-size: cover;
@@ -154,8 +154,8 @@ header {
 }
 
 .image-2 {
-     /*IMAGEN LEON*/
-    background-image: url(https://cdn.pixabay.com/photo/2017/07/24/19/57/tiger-2535888_640.jpg);
+     /*IMAGEN LIBRO*/
+    background-image: url(https://static.vecteezy.com/system/resources/previews/021/594/175/non_2x/ancient-magic-book-open-mystical-medieval-free-vector.jpg);
     background-position: center;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.441);
