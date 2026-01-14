@@ -1,9 +1,8 @@
-// Corrección completa del archivo script.js:
-
-// Inicializar WOW.js para animaciones al hacer scroll
+// ================= WOW.js =================
 new WOW().init();
 
-// Configuración para Typed.js
+
+// ================= Typed.js =================
 let options = {
     strings: ["mAS ESTRELLA qUe Mujer MAs Musica que ALma"],
     typeSpeed: 100,
@@ -14,5 +13,25 @@ let options = {
     showCursor: false,
 };
 
-// Inicializar Typed.js
 let typed = new Typed("#title", options);
+
+
+// ================= Música de fondo =================
+const music = document.getElementById("bg-music");
+let musicStarted = false;
+
+function startMusic() {
+    if (!musicStarted) {
+        music.volume = 0.4; // volumen bajo
+        music.play().catch(() => {}); // evita errores en móvil
+        musicStarted = true;
+
+        // Se elimina después de iniciar
+        window.removeEventListener("click", startMusic);
+        window.removeEventListener("scroll", startMusic);
+    }
+}
+
+// Primer click o scroll
+window.addEventListener("click", startMusic);
+window.addEventListener("scroll", startMusic);
