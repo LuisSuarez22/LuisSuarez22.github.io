@@ -3,7 +3,7 @@ new WOW().init();
 
 
 // ================= Typed.js =================
-let options = {
+new Typed("#title", {
     strings: ["mAS ESTRELLA qUe Mujer MAs Musica que ALma"],
     typeSpeed: 100,
     backSpeed: 50,
@@ -11,27 +11,18 @@ let options = {
     startDelay: 500,
     loop: true,
     showCursor: false,
-};
-
-let typed = new Typed("#title", options);
+});
 
 
 // ================= Música de fondo =================
 const music = document.getElementById("bg-music");
-let musicStarted = false;
+const startBtn = document.getElementById("start-audio");
 
 function startMusic() {
-    if (!musicStarted) {
-        music.volume = 0.4; // volumen bajo
-        music.play().catch(() => {}); // evita errores en móvil
-        musicStarted = true;
-
-        // Se elimina después de iniciar
-        window.removeEventListener("click", startMusic);
-        window.removeEventListener("scroll", startMusic);
-    }
+    music.volume = 0.4;
+    music.play().catch(() => {}); // evita errores en móvil
+    startBtn.remove(); // elimina la capa invisible
 }
 
-// Primer click o scroll
-window.addEventListener("click", startMusic);
-window.addEventListener("scroll", startMusic);
+// Se activa con el PRIMER click real
+startBtn.addEventListener("click", startMusic);
