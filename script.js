@@ -26,3 +26,33 @@ function startMusic() {
 
 // Se activa con el PRIMER click real
 startBtn.addEventListener("click", startMusic);
+// ================= Mensajes aleatorios estilo "toast" =================
+const mensajesDimensiones = [
+    "Eres la viajera de universos infinitos.",
+    "En otra dimensión, eres astronauta de sentimientos.",
+    "Tu reflejo en otra realidad baila entre estrellas.",
+    "En la dimensión alternativa, todo es música y risas.",
+    "Tu esencia cruza universos y deja luz.",
+];
+
+const img1 = document.querySelector(".image-1");
+
+img1.addEventListener("click", () => {
+    const mensaje = mensajesDimensiones[Math.floor(Math.random() * mensajesDimensiones.length)];
+    mostrarToast(mensaje);
+});
+
+// Función para crear el toast
+function mostrarToast(texto) {
+    const toast = document.createElement("div");
+    toast.textContent = texto;
+    toast.className = "toast-message";
+    document.body.appendChild(toast);
+
+    // Desaparece después de 3 segundos
+    setTimeout(() => {
+        toast.classList.add("fade-out");
+        toast.addEventListener("transitionend", () => toast.remove());
+    }, 3000);
+}
+
