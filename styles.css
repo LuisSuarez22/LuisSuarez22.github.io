@@ -146,7 +146,7 @@ header {
 
 .image-1 {
     /*IMAGEN DE TREN*/
-    background-image: url(https://cdn.pixabay.com/photo/2018/10/19/12/14/train-3758523_960_720.jpg);
+    background-image: url(https://es.gizmodo.com/app/uploads/2025/04/Diseno-sin-titulo-55-15-1024x683.jpg);
     background-position: center;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.441);
@@ -469,21 +469,30 @@ header {
     }
 }
 /* ======= ESTILO PARA MENSAJE FLOTANTE ======= */
+/* ======= ESTILO PARA MENSAJE FLOTANTE CENTRAL ======= */
 .toast-message {
     position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0,0,0,0.7);
+    top: 50%;                  /* Centrado vertical */
+    left: 50%;                 /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajusta para que quede justo en el centro */
+    background-color: rgba(0,0,0,0.85);
     color: #fff;
-    padding: 15px 25px;
-    border-radius: 10px;
-    font-size: 18px;
+    padding: 30px 50px;        /* Más grande que antes */
+    border-radius: 20px;
+    font-size: 32px;            /* Texto mucho más grande */
+    font-weight: bold;          
     text-align: center;
     z-index: 9999;
     opacity: 1;
     transition: opacity 1s ease, transform 1s ease;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.4); /* Efecto “glow” */
 }
+
+.toast-message.fade-out {
+    opacity: 0;
+    transform: translate(-50%, -60%); /* Se mueve un poco hacia arriba al desaparecer */
+}
+
 
 .toast-message.fade-out {
     opacity: 0;
