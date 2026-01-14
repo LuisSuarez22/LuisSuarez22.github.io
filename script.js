@@ -28,12 +28,33 @@ function startMusic() {
 startBtn.addEventListener("click", startMusic);
 // ================= Mensajes aleatorios estilo "toast" =================
 const mensajesDimensiones = [
-    "Eres la viajera de universos infinitos.",
-    "En otra dimensión, eres astronauta de sentimientos.",
-    "Tu reflejo en otra realidad baila entre estrellas.",
-    "En la dimensión alternativa, todo es música y risas.",
-    "Tu esencia cruza universos y deja luz.",
+    "Un espagueti que filosofea sobre la vida",
+    "Un cactus que escribe cartas de amor",
+    "Una sombra que se ríe sola",
+    "Un caracol con jetpack",
+    "Una nube que hace origami",
+    "Un reloj que olvida el tiempo",
+    "Un pingüino que toca violín",
+    "Un árbol que baila salsa",
+    "Un espejo que susurra secretos",
+    "Una taza de té que viaja al futuro",
+    "Un pez que colecciona sombreros",
+    "Un huevo que cuenta historias de piratas",
+    "Una lámpara que canta ópera",
+    "Un libro que cambia su final cada día",
+    "Un semáforo que da consejos de vida",
+    "Un globo que aprende idiomas",
+    "Una estrella que hace magia con caramelos",
+    "Un zapato que dibuja mapas del universo",
+    "Un río que habla en riddles",
+    "Un gato que escribe novelas de misterio",
+    "Una montaña que se esconde cuando llueve",
+    "Un espejo que se enamora de tu reflejo",
+    "Un sombrero que predice el clima",
+    "Una luna que colecciona sueños perdidos",
+    "Un caramelo que recuerda tu infancia"
 ];
+
 
 const img1 = document.querySelector(".image-1");
 
