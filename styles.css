@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* 🔒 EVITA QUE LAS ANIMACIONES SE SALGAN DEL BORDE */
+/* 🔒 EVITA QUE LAS ANIMACIONES SE SALGAN DEL BORDE  */
 html, body {
     overflow-x: hidden;
 }
