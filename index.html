@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webMAr ✮˚｡𖦹</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+
+<!-- 🎵 Música de fondo -->
+<audio id="bg-music" loop preload="auto">
+    <source src="assets/goteo.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Capa invisible para activar el audio -->
+<button id="start-audio"
+        style="position:fixed; inset:0; opacity:0; z-index:9999; cursor:pointer;">
+</button>
+
+<header>
+    <h1 class="title">✮ FELIZ CUMPLE ARA &lt;3</h1>
+
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="https://www.instagram.com/unalmamistica" target="_blank">unalmamistica</a></li>
+            <li><a href="https://open.spotify.com/playlist/0UUznpci1Xd5PUQoB4ZFJR" target="_blank">MUSICA</a></li>
+            <li><a href="https://www.instagram.com/aranza.ha/" target="_blank">IG</a></li>
+            <li><a href="#">Sorpresita</a></li>
+        </ul>
+    </nav>
+</header>
+
+<article class="container-general">
+
+<!-- HERO -->
+<div class="image">
+    <div class="title">
+        <h1 id="title"></h1>
+    </div>
+    <div class="description"></div>
+</div>
+
+<!-- CARDS -->
+<div class="now wow animate__animated animate__fadeInLeft container-cards">
+    <div class="card image-1"><div class="name"><h1>Versiones de un alma</h1></div></div>
+    <div class="card image-2"><div class="name"><h1>Flores</h1></div></div>
+    <div class="card image-3"><div class="name"><h1>IMAGE 3</h1></div></div>
+</div>
+
+<!-- FLOR RANDOM -->
+<div id="flor-container">
+    <img id="flor-random" src="" alt="Flor">
+</div>
+
+<!-- HISTORIA -->
+<div class="now animate__animated animate__bounceInLeft history">
+
+    <div class="img">
+        <img src="https://cdn.pixabay.com/photo/2021/01/13/13/46/house-5914171_649.jpg" alt="Historia">
+    </div>
+
+    <div class="title-history">
+        <h1>
+            Mar no es solo un nombre, es un sentimiento.
+            Esta página nace como un regalo de cumpleaños,
+            pero también como un espacio para recordarla.
+        </h1>
+    </div>
+
+    <div class="date"><h3>23 March 2023</h3></div>
+
+    <div class="history-text">
+        <p>Texto de la historia…</p>
+    </div>
+
+    <div class="button-2">
+        <button>BOTÓN</button>
+    </div>
+
+</div>
+
+<!-- TARJETAS -->
+<div class="card-history">
+
+    <div class="wow animate__animated animate__backInLeft card-history-1">
+        <img src="https://cdn.pixabay.com/photo/2019/06/10/09/00/village-4263755_640.jpg">
+    </div>
+
+    <div class="wow animate__animated animate__backInLeft card-history-2">
+        <img src="https://cdn.pixabay.com/photo/2016/11/22/19/25/sea-turtles-1850113_640.jpg">
+    </div>
+
+    <div class="wow animate__animated animate__backInLeft card-history-1">
+        <img src="https://cdn.pixabay.com/photo/2017/03/27/16/50/beach-2179624_640.jpg">
+    </div>
+
+</div>
+
+</article>
+
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
