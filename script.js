@@ -116,15 +116,13 @@ img2.addEventListener("click", () => {
 // ================= POEMAS ALEATORIOS IMAGE 3 =================
 
 const img3 = document.querySelector(".image-3");
-const poemaContainer = document.getElementById("poema-container");
-const poemaImg = document.getElementById("poema-img");
-const poemaAudio = document.getElementById("poema-audio");
 
-const poemas = [
-    { img: "assets/poema1.jpg", audio: "assets/poema1.mp3" },
-    { img: "assets/poema2.jpg", audio: "assets/poema2.mp3" },
-    { img: "assets/poema3.jpg", audio: "assets/poema3.mp3" }
-];
+// Cuando se haga click en Imagen 3
+img3.addEventListener("click", () => {
+    // Abrir nueva página pasando el audio fijo como query string
+    const url = `poema.html?audio=${encodeURIComponent("assets/poema_ara.mp3")}`;
+    window.open(url, "_blank");
+});
 
 img3.addEventListener("click", () => {
 

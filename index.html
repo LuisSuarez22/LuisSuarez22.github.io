@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>webMAr ✮˚｡𖦹</title>
 
+    <!-- Google Font: Playfair Display 400 Regular + Italic -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
 
@@ -31,80 +34,90 @@
     <nav class="nav-bar">
         <ul>
             <li><a href="https://www.instagram.com/unalmamistica" target="_blank">unalmamistica</a></li>
-            <li><a href="https://open.spotify.com/playlist/0UUznpci1Xd5PUQoB4ZFJR" target="_blank">MUSICA</a></li>
+            <li><a href="https://open.spotify.com/playlist/0UUznpci1Xd5PUQoB4ZFJR" target="_blank">MÚSICA</a></li>
             <li><a href="https://www.instagram.com/aranza.ha/" target="_blank">IG</a></li>
             <li><a href="#">Sorpresita</a></li>
         </ul>
     </nav>
 </header>
 
-<article class="container-general">
+<main class="container-general">
 
 <!-- HERO -->
-<div class="image">
-    <div class="title">
+<section class="image">
+    <div class="title-hero">
         <h1 id="title"></h1>
     </div>
     <div class="description"></div>
-</div>
+</section>
 
-<!-- CARDS -->
-<div class="now wow animate__animated animate__fadeInLeft container-cards">
-    <div class="card image-1"><div class="name"><h1>Versiones de un alma</h1></div></div>
-    <div class="card image-2"><div class="name"><h1>Flores</h1></div></div>
-    <div class="card image-3"><div class="name"><h1>IMAGE 3</h1></div></div>
-</div>
+<!-- 🌊 SECCIÓN POÉTICA -->
+<section class="history animate__animated animate__fadeInLeft">
 
-<!-- FLOR RANDOM -->
+    <div class="img">
+        <img src="https://cdn.pixabay.com/photo/2021/01/13/13/46/house-5914171_649.jpg" alt="Intención">
+    </div>
+
+    <div class="mensaje-mar">
+        <h1>
+            Mar no es solo un nombre, es un sentimiento.
+            Es calma en medio del caos, es profundidad, es inmensidad.
+            Esta página nace como un regalo de cumpleaños,
+            pero también como un pequeño rincón eterno donde su luz queda guardada.
+
+            Es un recordatorio de lo especial que es,
+            de todo lo que inspira,
+            de cada sonrisa que provoca
+            y de la forma tan única en que deja huella.
+
+            Porque hay personas que no solo cumplen años,
+            sino que celebran el mundo con su existencia.
+            Y Mar es una de ellas.
+        </h1>
+    </div>
+
+    <div class="date">
+        <h3>28 FEBRERO 2026</h3>
+    </div>
+
+</section>
+
+<!-- 🎴 CARDS -->
+<section class="container-cards animate__animated animate__fadeInUp">
+    <div class="card image-1">
+        <div class="name"><h2>Versiones de un alma</h2></div>
+    </div>
+    <div class="card image-2">
+        <div class="name"><h2>Jardín de Estrellas</h2></div>
+    </div>
+    <div class="card image-3">
+        <div class="name"><h2>Ecos del Corazón</h2></div>
+    </div>
+</section>
+
+<!-- 🌸 FLOR RANDOM -->
 <div id="flor-container">
     <img id="flor-random" src="" alt="Flor">
 </div>
 
-<!-- HISTORIA -->
-<div class="now animate__animated animate__bounceInLeft history">
+<!-- 📸 TARJETAS IMAGEN -->
+<section class="card-history">
 
-    <div class="img">
-        <img src="https://cdn.pixabay.com/photo/2021/01/13/13/46/house-5914171_649.jpg" alt="Historia">
+    <div class="card-history-item animate__animated animate__fadeInLeft">
+        <img src="https://cdn.pixabay.com/photo/2019/06/10/09/00/village-4263755_640.jpg" alt="">
     </div>
 
-    <div class="title-history">
-        <h1>
-            Mar no es solo un nombre, es un sentimiento.
-            Esta página nace como un regalo de cumpleaños,
-            pero también como un espacio para recordarla.
-        </h1>
+    <div class="card-history-item animate__animated animate__fadeInLeft">
+        <img src="https://cdn.pixabay.com/photo/2016/11/22/19/25/sea-turtles-1850113_640.jpg" alt="">
     </div>
 
-    <div class="date"><h3>23 March 2023</h3></div>
-
-    <div class="history-text">
-        <p>Texto de la historia…</p>
+    <div class="card-history-item animate__animated animate__fadeInLeft">
+        <img src="https://cdn.pixabay.com/photo/2017/03/27/16/50/beach-2179624_640.jpg" alt="">
     </div>
 
-    <div class="button-2">
-        <button>BOTÓN</button>
-    </div>
+</section>
 
-</div>
-
-<!-- TARJETAS -->
-<div class="card-history">
-
-    <div class="wow animate__animated animate__backInLeft card-history-1">
-        <img src="https://cdn.pixabay.com/photo/2019/06/10/09/00/village-4263755_640.jpg">
-    </div>
-
-    <div class="wow animate__animated animate__backInLeft card-history-2">
-        <img src="https://cdn.pixabay.com/photo/2016/11/22/19/25/sea-turtles-1850113_640.jpg">
-    </div>
-
-    <div class="wow animate__animated animate__backInLeft card-history-1">
-        <img src="https://cdn.pixabay.com/photo/2017/03/27/16/50/beach-2179624_640.jpg">
-    </div>
-
-</div>
-
-</article>
+</main>
 
 <!-- JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>

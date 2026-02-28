@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poema de Aranza</title>
+
+    <!-- Google Font opcional -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #000022, #000055);
+            color: white;
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            text-align: center;
+        }
+
+        img {
+            max-width: 80%;
+            max-height: 60vh;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255,255,255,0.3);
+        }
+
+        audio {
+            width: 80%;
+            max-width: 600px;
+        }
+
+        #play-btn {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #4444aa;
+            color: white;
+        }
+
+        #play-btn:hover {
+            background-color: #6666ff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Imagen del poema -->
+    <img id="poema-img" src="" alt="Poema de Aranza">
+
+    <!-- Botón para iniciar el audio -->
+    <button id="play-btn">▶️ Escuchar Poema</button>
+
+    <!-- Audio oculto -->
+    <audio id="poema-audio">
+        <source src="" type="audio/mpeg">
+        Tu navegador no soporta audio.
+    </audio>
+
+    <script>
+        // Leer parámetros de la URL
+        const params = new URLSearchParams(window.location.search);
+        const audioFile = params.get("audio") || "assets/poema_ara.mp3"; // por defecto
+        const imgFile = params.get("img") || "";
+
+        // Configurar imagen
+        if(imgFile) {
+            const img = document.getElementById("poema-img");
+            img.src = imgFile;
+        }
+
+        // Configurar audio
+        const audio = document.getElementById("poema-audio");
+        audio.src = audioFile;
+
+        // Botón de reproducción
+        const playBtn = document.getElementById("play-btn");
+        playBtn.addEventListener("click", () => {
+            audio.play().catch(() => {});
+            playBtn.style.display = "none"; // ocultar el botón al reproducir
+        });
+    </script>
+
+</body>
+</html>
